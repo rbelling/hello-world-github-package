@@ -1,10 +1,16 @@
 {
   "name": "hello-world-github-package",
   "version": "1.0.0",
-  "repository": "https://github.com/rbelling/hello-world-github-package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbelling/hello-world-github-package.git"
+  },
   "description": "Example of a dependency published on GitHub Packages",
   "main": "./cli.js",
   "bin": "./cli.js",
   "author": "Riccardo Bellingeri",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@rbelling"
+  },
   "license": "ISC"
 }
